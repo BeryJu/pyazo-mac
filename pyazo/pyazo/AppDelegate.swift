@@ -7,13 +7,12 @@
 //
 
 import Cocoa
+import Magnet
+import Carbon.HIToolbox
 import Sentry
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
-
     
     func application(application: NSApplication,
                      didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -25,14 +24,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         return true
     }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        if let keyCombo = KeyCombo(keyCode: kVK_ANSI_R, cocoaModifiers: [.shift, .command]) {
+            let hotKey = HotKey(identifier: "CommandControlB", keyCombo: keyCombo) { hotKey in
+                // CMD+SHIFT+R Pressed
+                print("Global hotkey triggered")
+                let screenshot = Screenshot()
+                screenshot.capture()
+                PyazoAPI().upload(url: URL(fileURLWithPath: screenshot.file)) {
+                    screenshot.cleanup()
+                }
+            }
+            hotKey.register()
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
-
 
 }
 

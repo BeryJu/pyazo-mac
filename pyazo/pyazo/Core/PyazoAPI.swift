@@ -60,7 +60,7 @@ class PyazoAPI {
         }
     }
     
-    func upload(url: URL) -> Void {
+    func upload(url: URL, done: @escaping (() -> Void)) -> Void {
         Alamofire.upload(
             multipartFormData: { multipartFormData in
                 multipartFormData.append(url as URL , withName: "imagedata")
@@ -71,10 +71,11 @@ class PyazoAPI {
                 switch encodingResult {
                 case .success(let upload, _, _):
                     upload.responseString(completionHandler: { response in
-                        print(response.result.value as Any)
+                        print(response.result.value!)
                         self.showNotification(body: response.result.value!)
                         self.setClipboard(value: response.result.value!)
                         self.openURL(url: response.result.value!)
+                        done()
                     })
                 case .failure(let encodingError):
                     print(encodingError)
