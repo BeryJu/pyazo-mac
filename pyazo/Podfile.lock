@@ -1,16 +1,50 @@
 PODS:
   - Alamofire (4.7.3)
+  - KSCrash/Core (1.15.18):
+    - KSCrash/Reporting/Filters/Basic
+  - KSCrash/Recording (1.15.18):
+    - KSCrash/Recording/Tools (= 1.15.18)
+  - KSCrash/Recording/Tools (1.15.18)
+  - KSCrash/Reporting/Filters/Base (1.15.18):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Filters/Basic (1.15.18):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - Magnet (2.3.1)
+  - Sentry (3.13.1):
+    - Sentry/Core (= 3.13.1)
+    - Sentry/KSCrash (= 3.13.1)
+  - Sentry/Core (3.13.1)
+  - Sentry/KSCrash (3.13.1):
+    - KSCrash/Core (~> 1.15.12)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - Magnet
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `3.13.1`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - KSCrash
+    - Magnet
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 3.13.1
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 3.13.1
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  KSCrash: 5394936f41e5c1ef7b79cf79b30d53299b0c160e
+  Magnet: f8dac2ffc845ffe68b2dd21c68a801f866f4a098
+  Sentry: c6c852d5a982dd42de8c35f7da4116af6081ebbd
 
-PODFILE CHECKSUM: 2fa14bae73b5dd37d0f6078ea53b44d42fbe194d
+PODFILE CHECKSUM: d8a847b18a44ba82fcb29e62a481da858bdb0279
 
 COCOAPODS: 1.6.0.beta.2
