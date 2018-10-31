@@ -14,6 +14,9 @@ import Sentry
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    let popover = NSPopover()
+    let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
+    
     func application(application: NSApplication,
                      didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         do {
@@ -26,8 +29,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        if let button = statusItem.button {
+            button.image = NSImage(named:NSImage.Name("MenubarIcon"))
+            button.action = #selector(togglePopover(_:))
+        }
+        popover.contentViewController = HomeController.freshController()
+        // Hotkey
         if let keyCombo = KeyCombo(keyCode: kVK_ANSI_R, cocoaModifiers: [.shift, .command]) {
-            let hotKey = HotKey(identifier: "CommandControlB", keyCombo: keyCombo) { hotKey in
+            let hotKey = HotKey(identifier: "ShiftCommandR", keyCombo: keyCombo) { hotKey in
                 // CMD+SHIFT+R Pressed
                 print("Global hotkey triggered")
                 let screenshot = Screenshot()
@@ -38,8 +47,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             hotKey.register()
         }
+        print("We started")
     }
 
+    @objc func togglePopover(_ sender: Any?) {
+        if popover.isShown {
+            popover.performClose(sender)
+        } else {
+            if let button = statusItem.button {
+                popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+            }
+        }
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
     }
 

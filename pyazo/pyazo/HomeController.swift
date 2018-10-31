@@ -34,6 +34,7 @@ class HomeController: NSViewController {
 }
 
 extension HomeController: DragViewDelegate {
+    
     func dragView(didDragFileWith path: String) {
         self.progress.isHidden = false
         self.progress.startAnimation(self.view)
@@ -47,4 +48,18 @@ extension HomeController: DragViewDelegate {
             print("Uploaded")
         }
     }
+
 }
+
+extension HomeController {
+
+    static func freshController() -> HomeController {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let identifier = NSStoryboard.SceneIdentifier("HomeController")
+        guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? HomeController else {
+            fatalError("Why cant i find HomeController? - Check Main.storyboard")
+        }
+        return viewcontroller
+    }
+}
+
