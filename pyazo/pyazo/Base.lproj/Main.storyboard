@@ -717,7 +717,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30C-iV-zVZ">
-                                            <rect key="frame" x="177" y="59" width="85" height="73"/>
+                                            <rect key="frame" x="178" y="59" width="85" height="73"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="upload" id="Ye4-w7-Abd"/>
                                         </imageView>
@@ -730,8 +730,12 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="B2B-7t-36M">
+                                            <rect key="frame" x="212" y="35" width="16" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        </progressIndicator>
                                         <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qR4-g2-hsz" customClass="DragView" customModule="pyazo" customModuleProvider="target">
-                                            <rect key="frame" x="-1" y="0.0" width="440" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="440" height="190"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
                                     </subviews>
@@ -767,6 +771,7 @@
                     <connections>
                         <outlet property="dragView" destination="qR4-g2-hsz" id="FwW-3y-Mn7"/>
                         <outlet property="imageView" destination="30C-iV-zVZ" id="kgj-GJ-8es"/>
+                        <outlet property="progress" destination="B2B-7t-36M" id="fmH-kk-zav"/>
                         <outlet property="textField" destination="rzI-Xh-oIh" id="5gl-rX-pOg"/>
                     </connections>
                 </viewController>

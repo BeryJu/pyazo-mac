@@ -13,12 +13,14 @@ class HomeController: NSViewController {
     @IBOutlet var dragView: DragView!
     @IBOutlet var imageView: NSImageView!
     @IBOutlet var textField: NSTextField!
+    @IBOutlet var progress: NSProgressIndicator!
     
     var preferencesWindow: PreferencesWindow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dragView.delegate = self
+        progress.isHidden = true
     }
     
     override func awakeFromNib() {
@@ -33,7 +35,16 @@ class HomeController: NSViewController {
 
 extension HomeController: DragViewDelegate {
     func dragView(didDragFileWith path: String) {
+        self.progress.isHidden = false
+        self.progress.startAnimation(self.view)
+        self.textField.isHidden = true
+        
         let url = NSURL(fileURLWithPath: path)
-        PyazoAPI().upload(url: url as URL)
+        PyazoAPI().upload(url: url as URL) {
+            self.progress.isHidden = true
+            self.progress.stopAnimation(self.view)
+            self.textField.isHidden = false
+            print("Uploaded")
+        }
     }
 }
