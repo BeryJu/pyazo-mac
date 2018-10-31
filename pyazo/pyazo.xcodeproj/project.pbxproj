@@ -7,90 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B45EBA39216BDE1600DC6115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EBA38216BDE1600DC6115 /* AppDelegate.swift */; };
-		B45EBA3B216BDE1600DC6115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EBA3A216BDE1600DC6115 /* ViewController.swift */; };
-		B45EBA3D216BDE1900DC6115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45EBA3C216BDE1900DC6115 /* Assets.xcassets */; };
-		B45EBA40216BDE1900DC6115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45EBA3E216BDE1900DC6115 /* Main.storyboard */; };
-		B45EBA4A216BE6F900DC6115 /* PyazoMenubarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EBA48216BE6F900DC6115 /* PyazoMenubarController.swift */; };
-		B45EBA4B216BE6F900DC6115 /* PyazoMenubarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45EBA49216BE6F900DC6115 /* PyazoMenubarController.xib */; };
-		B45EBA4D216BEB2A00DC6115 /* PyazoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45EBA4C216BEB2A00DC6115 /* PyazoAPI.swift */; };
+		7E3D4E20547927622CEB1B31 /* Pods_pyazo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2AE138A3C44E74B3D4F2CB /* Pods_pyazo.framework */; };
+		93E1A7ECC80906969FD1D795 /* Pods_pyazoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9684F5DC8A4EB8FCA0FE7C43 /* Pods_pyazoTests.framework */; };
+		B41EC04B2189CBD100C8BC08 /* PyazoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EC04A2189CBD100C8BC08 /* PyazoAPI.swift */; };
+		B4EF5EF82189B3A40051EEB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF5EF72189B3A40051EEB5 /* AppDelegate.swift */; };
+		B4EF5EFA2189B3A40051EEB5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF5EF92189B3A40051EEB5 /* HomeController.swift */; };
+		B4EF5EFC2189B3A60051EEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EF5EFB2189B3A60051EEB5 /* Assets.xcassets */; };
+		B4EF5EFF2189B3A60051EEB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EF5EFD2189B3A60051EEB5 /* Main.storyboard */; };
+		B4EF5F0B2189B3A60051EEB5 /* pyazoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF5F0A2189B3A60051EEB5 /* pyazoTests.swift */; };
+		B4EF5F1B2189B6FD0051EEB5 /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF5F1A2189B6FD0051EEB5 /* DragView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B4EF5F072189B3A60051EEB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4EF5EEC2189B3A40051EEB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4EF5EF32189B3A40051EEB5;
+			remoteInfo = pyazo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		B45EBA35216BDE1600DC6115 /* pyazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pyazo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B45EBA38216BDE1600DC6115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B45EBA3A216BDE1600DC6115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B45EBA3C216BDE1900DC6115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B45EBA3F216BDE1900DC6115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B45EBA41216BDE1900DC6115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B45EBA42216BDE1900DC6115 /* pyazo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pyazo.entitlements; sourceTree = "<group>"; };
-		B45EBA48216BE6F900DC6115 /* PyazoMenubarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyazoMenubarController.swift; sourceTree = "<group>"; };
-		B45EBA49216BE6F900DC6115 /* PyazoMenubarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PyazoMenubarController.xib; sourceTree = "<group>"; };
-		B45EBA4C216BEB2A00DC6115 /* PyazoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyazoAPI.swift; sourceTree = "<group>"; };
+		00C74BEF8121E8E31F3CFF9C /* Pods-pyazoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyazoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pyazoTests/Pods-pyazoTests.release.xcconfig"; sourceTree = "<group>"; };
+		3AAF4EBFD2E1CE378FA92DE5 /* Pods-pyazo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyazo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pyazo/Pods-pyazo.release.xcconfig"; sourceTree = "<group>"; };
+		5F2AE138A3C44E74B3D4F2CB /* Pods_pyazo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pyazo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9684F5DC8A4EB8FCA0FE7C43 /* Pods_pyazoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pyazoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3C0E54FDFD5AD0A8922FEE /* Pods-pyazo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyazo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pyazo/Pods-pyazo.debug.xcconfig"; sourceTree = "<group>"; };
+		B41EC04A2189CBD100C8BC08 /* PyazoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyazoAPI.swift; sourceTree = "<group>"; };
+		B4EF5EF42189B3A40051EEB5 /* pyazo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pyazo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EF5EF72189B3A40051EEB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4EF5EF92189B3A40051EEB5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B4EF5EFB2189B3A60051EEB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4EF5EFE2189B3A60051EEB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4EF5F002189B3A60051EEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4EF5F012189B3A60051EEB5 /* pyazo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pyazo.entitlements; sourceTree = "<group>"; };
+		B4EF5F062189B3A60051EEB5 /* pyazoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyazoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EF5F0A2189B3A60051EEB5 /* pyazoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyazoTests.swift; sourceTree = "<group>"; };
+		B4EF5F0C2189B3A60051EEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4EF5F1A2189B6FD0051EEB5 /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		CDCECCFD2499DB65F49BA599 /* Pods-pyazoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pyazoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pyazoTests/Pods-pyazoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B45EBA32216BDE1600DC6115 /* Frameworks */ = {
+		B4EF5EF12189B3A40051EEB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3D4E20547927622CEB1B31 /* Pods_pyazo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EF5F032189B3A60051EEB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E1A7ECC80906969FD1D795 /* Pods_pyazoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B43841A9218618C3004E9452 /* API */ = {
+		0F60A87FF637FD712C9126E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B45EBA4C216BEB2A00DC6115 /* PyazoAPI.swift */,
+				9E3C0E54FDFD5AD0A8922FEE /* Pods-pyazo.debug.xcconfig */,
+				3AAF4EBFD2E1CE378FA92DE5 /* Pods-pyazo.release.xcconfig */,
+				CDCECCFD2499DB65F49BA599 /* Pods-pyazoTests.debug.xcconfig */,
+				00C74BEF8121E8E31F3CFF9C /* Pods-pyazoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C738E2AFEB6707F467CFD9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F2AE138A3C44E74B3D4F2CB /* Pods_pyazo.framework */,
+				9684F5DC8A4EB8FCA0FE7C43 /* Pods_pyazoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B41EC0492189CBBE00C8BC08 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B41EC04A2189CBD100C8BC08 /* PyazoAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		B45EBA2C216BDE1600DC6115 = {
+		B4EF5EEB2189B3A40051EEB5 = {
 			isa = PBXGroup;
 			children = (
-				B45EBA37216BDE1600DC6115 /* pyazo */,
-				B45EBA36216BDE1600DC6115 /* Products */,
+				B4EF5EF62189B3A40051EEB5 /* pyazo */,
+				B4EF5F092189B3A60051EEB5 /* pyazoTests */,
+				B4EF5EF52189B3A40051EEB5 /* Products */,
+				0F60A87FF637FD712C9126E3 /* Pods */,
+				9C738E2AFEB6707F467CFD9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B45EBA36216BDE1600DC6115 /* Products */ = {
+		B4EF5EF52189B3A40051EEB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B45EBA35216BDE1600DC6115 /* pyazo.app */,
+				B4EF5EF42189B3A40051EEB5 /* pyazo.app */,
+				B4EF5F062189B3A60051EEB5 /* pyazoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B45EBA37216BDE1600DC6115 /* pyazo */ = {
+		B4EF5EF62189B3A40051EEB5 /* pyazo */ = {
 			isa = PBXGroup;
 			children = (
-				B43841A9218618C3004E9452 /* API */,
-				B45EBA38216BDE1600DC6115 /* AppDelegate.swift */,
-				B45EBA48216BE6F900DC6115 /* PyazoMenubarController.swift */,
-				B45EBA49216BE6F900DC6115 /* PyazoMenubarController.xib */,
-				B45EBA3A216BDE1600DC6115 /* ViewController.swift */,
-				B45EBA3C216BDE1900DC6115 /* Assets.xcassets */,
-				B45EBA3E216BDE1900DC6115 /* Main.storyboard */,
-				B45EBA41216BDE1900DC6115 /* Info.plist */,
-				B45EBA42216BDE1900DC6115 /* pyazo.entitlements */,
+				B41EC0492189CBBE00C8BC08 /* API */,
+				B4EF5F152189B3CD0051EEB5 /* Views */,
+				B4EF5EF72189B3A40051EEB5 /* AppDelegate.swift */,
+				B4EF5EF92189B3A40051EEB5 /* HomeController.swift */,
+				B4EF5EFB2189B3A60051EEB5 /* Assets.xcassets */,
+				B4EF5EFD2189B3A60051EEB5 /* Main.storyboard */,
+				B4EF5F002189B3A60051EEB5 /* Info.plist */,
+				B4EF5F012189B3A60051EEB5 /* pyazo.entitlements */,
 			);
 			path = pyazo;
+			sourceTree = "<group>";
+		};
+		B4EF5F092189B3A60051EEB5 /* pyazoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF5F0A2189B3A60051EEB5 /* pyazoTests.swift */,
+				B4EF5F0C2189B3A60051EEB5 /* Info.plist */,
+			);
+			path = pyazoTests;
+			sourceTree = "<group>";
+		};
+		B4EF5F152189B3CD0051EEB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF5F1A2189B6FD0051EEB5 /* DragView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B45EBA34216BDE1600DC6115 /* pyazo */ = {
+		B4EF5EF32189B3A40051EEB5 /* pyazo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B45EBA45216BDE1900DC6115 /* Build configuration list for PBXNativeTarget "pyazo" */;
+			buildConfigurationList = B4EF5F0F2189B3A70051EEB5 /* Build configuration list for PBXNativeTarget "pyazo" */;
 			buildPhases = (
-				B45EBA31216BDE1600DC6115 /* Sources */,
-				B45EBA32216BDE1600DC6115 /* Frameworks */,
-				B45EBA33216BDE1600DC6115 /* Resources */,
-				B44FA3FD216BFD6500BFB572 /* ShellScript */,
+				090BD60EE5A8168173930179 /* [CP] Check Pods Manifest.lock */,
+				B4EF5EF02189B3A40051EEB5 /* Sources */,
+				B4EF5EF12189B3A40051EEB5 /* Frameworks */,
+				B4EF5EF22189B3A40051EEB5 /* Resources */,
+				EF6C69DCE8D48A42F7AFCEFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,25 +168,48 @@
 			);
 			name = pyazo;
 			productName = pyazo;
-			productReference = B45EBA35216BDE1600DC6115 /* pyazo.app */;
+			productReference = B4EF5EF42189B3A40051EEB5 /* pyazo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B4EF5F052189B3A60051EEB5 /* pyazoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4EF5F122189B3A70051EEB5 /* Build configuration list for PBXNativeTarget "pyazoTests" */;
+			buildPhases = (
+				36F9B5FC986E483CBA0D4DE8 /* [CP] Check Pods Manifest.lock */,
+				B4EF5F022189B3A60051EEB5 /* Sources */,
+				B4EF5F032189B3A60051EEB5 /* Frameworks */,
+				B4EF5F042189B3A60051EEB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4EF5F082189B3A60051EEB5 /* PBXTargetDependency */,
+			);
+			name = pyazoTests;
+			productName = pyazoTests;
+			productReference = B4EF5F062189B3A60051EEB5 /* pyazoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B45EBA2D216BDE1600DC6115 /* Project object */ = {
+		B4EF5EEC2189B3A40051EEB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Jens Langhammer";
 				TargetAttributes = {
-					B45EBA34216BDE1600DC6115 = {
+					B4EF5EF32189B3A40051EEB5 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					B4EF5F052189B3A60051EEB5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B4EF5EF32189B3A40051EEB5;
 					};
 				};
 			};
-			buildConfigurationList = B45EBA30216BDE1600DC6115 /* Build configuration list for PBXProject "pyazo" */;
+			buildConfigurationList = B4EF5EEF2189B3A40051EEB5 /* Build configuration list for PBXProject "pyazo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,31 +217,38 @@
 				en,
 				Base,
 			);
-			mainGroup = B45EBA2C216BDE1600DC6115;
-			productRefGroup = B45EBA36216BDE1600DC6115 /* Products */;
+			mainGroup = B4EF5EEB2189B3A40051EEB5;
+			productRefGroup = B4EF5EF52189B3A40051EEB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B45EBA34216BDE1600DC6115 /* pyazo */,
+				B4EF5EF32189B3A40051EEB5 /* pyazo */,
+				B4EF5F052189B3A60051EEB5 /* pyazoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B45EBA33216BDE1600DC6115 /* Resources */ = {
+		B4EF5EF22189B3A40051EEB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45EBA3D216BDE1900DC6115 /* Assets.xcassets in Resources */,
-				B45EBA40216BDE1900DC6115 /* Main.storyboard in Resources */,
-				B45EBA4B216BE6F900DC6115 /* PyazoMenubarController.xib in Resources */,
+				B4EF5EFC2189B3A60051EEB5 /* Assets.xcassets in Resources */,
+				B4EF5EFF2189B3A60051EEB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EF5F042189B3A60051EEB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B44FA3FD216BFD6500BFB572 /* ShellScript */ = {
+		090BD60EE5A8168173930179 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -156,38 +256,101 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/OAuth2.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuth2.framework",
+				"$(DERIVED_FILE_DIR)/Pods-pyazo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36F9B5FC986E483CBA0D4DE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pyazoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF6C69DCE8D48A42F7AFCEFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pyazo/Pods-pyazo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pyazo/Pods-pyazo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B45EBA31216BDE1600DC6115 /* Sources */ = {
+		B4EF5EF02189B3A40051EEB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45EBA3B216BDE1600DC6115 /* ViewController.swift in Sources */,
-				B45EBA4A216BE6F900DC6115 /* PyazoMenubarController.swift in Sources */,
-				B45EBA4D216BEB2A00DC6115 /* PyazoAPI.swift in Sources */,
-				B45EBA39216BDE1600DC6115 /* AppDelegate.swift in Sources */,
+				B4EF5EFA2189B3A40051EEB5 /* HomeController.swift in Sources */,
+				B4EF5EF82189B3A40051EEB5 /* AppDelegate.swift in Sources */,
+				B41EC04B2189CBD100C8BC08 /* PyazoAPI.swift in Sources */,
+				B4EF5F1B2189B6FD0051EEB5 /* DragView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EF5F022189B3A60051EEB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EF5F0B2189B3A60051EEB5 /* pyazoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B4EF5F082189B3A60051EEB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4EF5EF32189B3A40051EEB5 /* pyazo */;
+			targetProxy = B4EF5F072189B3A60051EEB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		B45EBA3E216BDE1900DC6115 /* Main.storyboard */ = {
+		B4EF5EFD2189B3A60051EEB5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B45EBA3F216BDE1900DC6115 /* Base */,
+				B4EF5EFE2189B3A60051EEB5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -195,7 +358,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B45EBA43216BDE1900DC6115 /* Debug */ = {
+		B4EF5F0D2189B3A70051EEB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,7 +419,7 @@
 			};
 			name = Debug;
 		};
-		B45EBA44216BDE1900DC6115 /* Release */ = {
+		B4EF5F0E2189B3A70051EEB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,18 +473,15 @@
 			};
 			name = Release;
 		};
-		B45EBA46216BDE1900DC6115 /* Debug */ = {
+		B4EF5F102189B3A70051EEB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3C0E54FDFD5AD0A8922FEE /* Pods-pyazo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = pyazo/pyazo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JQNH45HN7V;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = pyazo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,18 +493,15 @@
 			};
 			name = Debug;
 		};
-		B45EBA47216BDE1900DC6115 /* Release */ = {
+		B4EF5F112189B3A70051EEB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAF4EBFD2E1CE378FA92DE5 /* Pods-pyazo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = pyazo/pyazo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JQNH45HN7V;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = pyazo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,28 +513,81 @@
 			};
 			name = Release;
 		};
+		B4EF5F132189B3A70051EEB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCECCFD2499DB65F49BA599 /* Pods-pyazoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JQNH45HN7V;
+				INFOPLIST_FILE = pyazoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.beryju.pyazoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pyazo.app/Contents/MacOS/pyazo";
+			};
+			name = Debug;
+		};
+		B4EF5F142189B3A70051EEB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C74BEF8121E8E31F3CFF9C /* Pods-pyazoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JQNH45HN7V;
+				INFOPLIST_FILE = pyazoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.beryju.pyazoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pyazo.app/Contents/MacOS/pyazo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B45EBA30216BDE1600DC6115 /* Build configuration list for PBXProject "pyazo" */ = {
+		B4EF5EEF2189B3A40051EEB5 /* Build configuration list for PBXProject "pyazo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B45EBA43216BDE1900DC6115 /* Debug */,
-				B45EBA44216BDE1900DC6115 /* Release */,
+				B4EF5F0D2189B3A70051EEB5 /* Debug */,
+				B4EF5F0E2189B3A70051EEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B45EBA45216BDE1900DC6115 /* Build configuration list for PBXNativeTarget "pyazo" */ = {
+		B4EF5F0F2189B3A70051EEB5 /* Build configuration list for PBXNativeTarget "pyazo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B45EBA46216BDE1900DC6115 /* Debug */,
-				B45EBA47216BDE1900DC6115 /* Release */,
+				B4EF5F102189B3A70051EEB5 /* Debug */,
+				B4EF5F112189B3A70051EEB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4EF5F122189B3A70051EEB5 /* Build configuration list for PBXNativeTarget "pyazoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EF5F132189B3A70051EEB5 /* Debug */,
+				B4EF5F142189B3A70051EEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B45EBA2D216BDE1600DC6115 /* Project object */;
+	rootObject = B4EF5EEC2189B3A40051EEB5 /* Project object */;
 }
