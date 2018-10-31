@@ -751,6 +751,17 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8Q-0M-Hbm">
+                                <rect key="frame" x="416" y="255" width="50" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSActionTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L9Y-dk-CrW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="preferencesClick:" target="XfG-lQ-9wD" id="xB1-Pw-zUp"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -766,6 +777,7 @@
     </scenes>
     <resources>
         <image name="Icon" width="500" height="500"/>
+        <image name="NSActionTemplate" width="14" height="14"/>
         <image name="upload" width="1600" height="1600"/>
     </resources>
 </document>

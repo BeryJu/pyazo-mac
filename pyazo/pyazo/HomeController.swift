@@ -7,25 +7,28 @@
 //
 
 import Cocoa
-import Alamofire
 
 class HomeController: NSViewController {
 
     @IBOutlet var dragView: DragView!
     @IBOutlet var imageView: NSImageView!
     @IBOutlet var textField: NSTextField!
-    @IBOutlet var progress: NSProgressIndicator!
+    
+    var preferencesWindow: PreferencesWindow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dragView.delegate = self
     }
     
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
+    override func awakeFromNib() {
+        self.preferencesWindow = PreferencesWindow()
     }
+    
+    @IBAction func preferencesClick(_ sender: Any) {
+        self.preferencesWindow.showWindow(self)
+    }
+
 }
 
 extension HomeController: DragViewDelegate {
