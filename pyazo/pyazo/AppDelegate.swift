@@ -29,6 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // Menubar
         if let button = statusItem.button {
             button.image = NSImage(named:NSImage.Name("MenubarIcon"))
             button.action = #selector(togglePopover(_:))
@@ -46,6 +47,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 }
             }
             hotKey.register()
+        }
+        // Touchbar
+        if #available(OSX 10.12.1, *) {
+            NSApplication.shared.isAutomaticCustomizeTouchBarMenuItemEnabled = true
         }
         print("We started")
     }

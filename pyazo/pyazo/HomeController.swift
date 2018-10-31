@@ -23,6 +23,18 @@ class HomeController: NSViewController {
         progress.isHidden = true
     }
     
+    @IBAction func touchbarButton(_ sender: Any) {
+        let screenshot = Screenshot()
+        screenshot.capture()
+        PyazoAPI().upload(url: URL(fileURLWithPath: screenshot.file)) {
+            screenshot.cleanup()
+        }
+    }
+    
+    @IBAction func quitButton(_ sender: Any) {
+        exit(0)
+    }
+    
     override func awakeFromNib() {
         self.preferencesWindow = PreferencesWindow()
     }
