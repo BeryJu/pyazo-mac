@@ -17,17 +17,20 @@ PODS:
   - Sentry/Core (3.13.1)
   - Sentry/KSCrash (3.13.1):
     - KSCrash/Core (~> 1.15.12)
+  - Sparkle (1.20.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Magnet
   - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `3.13.1`)
+  - Sparkle
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - KSCrash
     - Magnet
+    - Sparkle
 
 EXTERNAL SOURCES:
   Sentry:
@@ -44,7 +47,8 @@ SPEC CHECKSUMS:
   KSCrash: 5394936f41e5c1ef7b79cf79b30d53299b0c160e
   Magnet: f8dac2ffc845ffe68b2dd21c68a801f866f4a098
   Sentry: c6c852d5a982dd42de8c35f7da4116af6081ebbd
+  Sparkle: 48999e7ee032f05ca05e28451eadf4af8ede6b44
 
-PODFILE CHECKSUM: d8a847b18a44ba82fcb29e62a481da858bdb0279
+PODFILE CHECKSUM: 3525e9c8e2794a698f6da6d227a1244839e7eede
 
 COCOAPODS: 1.6.0.beta.2

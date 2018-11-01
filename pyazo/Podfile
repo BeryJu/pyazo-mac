@@ -5,6 +5,8 @@ use_frameworks!
   pod 'Alamofire', '~> 4.5'
   pod 'Magnet'
   pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '3.13.1'
+  pod 'Sparkle'
+
   target 'pyazoTests' do
     inherit! :search_paths
     # Pods for testing
