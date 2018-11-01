@@ -16,6 +16,7 @@ class HomeController: NSViewController {
     @IBOutlet var progress: NSProgressIndicator!
     
     var preferencesWindow: PreferencesWindow!
+    var popover: NSPopover!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,18 @@ class HomeController: NSViewController {
     }
     
     @IBAction func preferencesClick(_ sender: Any) {
+        self.popover.performClose(self)
         self.preferencesWindow.showWindow(self)
+    }
+    
+    static func freshController(container: NSPopover) -> HomeController {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+        let identifier = NSStoryboard.SceneIdentifier("HomeController")
+        guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? HomeController else {
+            fatalError("Why cant i find HomeController? - Check Main.storyboard")
+        }
+        viewcontroller.popover = container
+        return viewcontroller
     }
 
 }
@@ -62,16 +74,3 @@ extension HomeController: DragViewDelegate {
     }
 
 }
-
-extension HomeController {
-
-    static func freshController() -> HomeController {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-        let identifier = NSStoryboard.SceneIdentifier("HomeController")
-        guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? HomeController else {
-            fatalError("Why cant i find HomeController? - Check Main.storyboard")
-        }
-        return viewcontroller
-    }
-}
-

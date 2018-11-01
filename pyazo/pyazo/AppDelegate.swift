@@ -34,7 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named:NSImage.Name("MenubarIcon"))
             button.action = #selector(togglePopover(_:))
         }
-        popover.contentViewController = HomeController.freshController()
+        popover.contentViewController = HomeController.freshController(container: popover)
         // Hotkey
         if let keyCombo = KeyCombo(keyCode: kVK_ANSI_R, cocoaModifiers: [.shift, .command]) {
             let hotKey = HotKey(identifier: "ShiftCommandR", keyCombo: keyCombo) { hotKey in
